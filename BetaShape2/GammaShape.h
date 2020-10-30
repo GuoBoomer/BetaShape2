@@ -38,10 +38,13 @@ class GammaShape :
 	//通过种子点开始生长
 	void regionGrow(int seed, vector<int> &noise, blocks *block,
 		tri_index *tri,BallCenter *bc, vector<int> &stop_point, vector<int> &current_queue);
-	//种子生长法完全体
+	//种子生长法v2
 	void regionGrow2(int seed, vector<int> &noise, blocks *block,
 		tri_index *tri, BallCenter *bc, vector<int> &stop_point, vector<int> &current_queue);
-	
+	//种子生长法v2
+	void regionGrow3(int seed, vector<int> &noise, blocks *block,
+		tri_index *tri, BallCenter *bc, vector<int> &stop_point, vector<int> &current_queue);
+
 	bool judgeExistenceOfPoints(int a, int b, int c,tri_index *tri);
 	//判断圆心集合
 	void judgeSetsOfBallCenter(BallCenter *bc ,double Circumball[][3], int seed,
